@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Projeto API Rick and Morty</title>
+  </head>
+
+  <body>
+    <form action="" method="get">
+      <h1>Projeto API (Rick and Morty)</h1>
+      <h2>Busca de personagens</h2>
+      <h3>Total de 826 personagens</h3>
+      <label for="characterId">Informe o Nº do personagem</label>
+      <input type="number" name="" id="characterId" min="1" max="826"/>
+
+      <hr />
+
+      <h2>Informações</h2>
+      <label for="name">Nome</label>
+      <input type="checkbox" name="name" id="name" />
+
+      <label for="status">Status</label>
+      <input type="checkbox" name="status" id="status" />
+
+      <label for="species">Espécie</label>
+      <input type="checkbox" name="species" id="species" />
+
+      <label for="gender">Genêro</label>
+      <input type="checkbox" name="gender" id="gender" />
+
+      <label for="origin">Planeta de Origem</label>
+      <input type="checkbox" name="origin" id="origin" />
+
+      <label for="episode">Episódios</label>
+      <input type="checkbox" name="episode" id="episode" />
+
+      <hr />
+
+      <button type="submit" id="btn-go">Pesquisar 🔍</button>
+      <button type="reset" id="btn-reset">Limpar🧹</button>
+    </form>
+
+    <div id="result-style">
+      <img src="" alt="" id="img" />
+
+      <div id="content"></div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
